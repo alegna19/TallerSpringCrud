@@ -24,7 +24,7 @@ public class DetalleVenta {
 
     @Size(min = 1, message = "Debe tener minimo un producto")
     @Column(name = "cantidad", nullable = false, length = 80)
-    private int cantidad;
+    private String cantidad;
 
     public int getIdDetalleVenta() {
         return idDetalleVenta;
@@ -50,11 +50,11 @@ public class DetalleVenta {
         this.producto = producto;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 }
