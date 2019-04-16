@@ -1,8 +1,11 @@
 package com.tallermitocode.model;
 
+import io.swagger.annotations.ApiModel;
+
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
+@ApiModel(description = "Información de la Persona")
 @Entity
 @Table(name = "persona")
 public class Persona {
